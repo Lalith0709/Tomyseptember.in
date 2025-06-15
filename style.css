@@ -1,0 +1,67 @@
+
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #d63384;
+}
+
+.sub {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #6c757d;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+#countdown div {
+  background: #fff;
+  border: 2px solid #ffc0cb;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 80px;
+}
+
+#countdown span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff1493;
+  display: block;
+}
+
+#countdown small {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.message {
+  font-style: italic;
+  color: #555;
+  margin-top: 1.5rem;
+}
