@@ -13,7 +13,8 @@
     <h2>🎀 Enter your name to unlock your surprise 🎀</h2>
     <input type="text" id="nameInput" placeholder="Enter your name..." />
     <br>
-    <button onclick="checkName()">Submit</button>
+    <button 
+    onclick="checkName()">Submit</button>
     <p id="wrongName"></p>
   </div>
 
@@ -48,7 +49,7 @@
   function checkName() {
     const name = document.getElementById("nameInput").value.toLowerCase();
     const validName = ["srujana"];
-    if (name === validName) {
+    if (validNames.includes(name)) {
       document.getElementById("entryScreen").style.display = "none";
       document.getElementById("mainContent").style.display = "block";
     } else {
