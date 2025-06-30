@@ -32,8 +32,8 @@ const countdown = setInterval(() => {
     clearInterval(countdown);
     document.querySelector(".container").innerHTML = `
       <h1>Happy Birthday, Srujana! 🎉</h1>
-      <p class="sub">Wishing you smiles, sunshine, and sweet moments all year long.</p>
-      <p class="message">From someone who silently cares 💖</p>
+      <p class="sub">Wishing you happy 18th birthday .</p>
+      <p class="message">happy birthday papa 💖</p>
     `;
   }
 }, 1000);

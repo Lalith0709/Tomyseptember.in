@@ -8,22 +8,35 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>🎉 Countdown to Srujana's Birthday 🎂</h1>
-    <p class="sub">Just waiting for the most beautiful day ❤️</p>
-    <div id="countdown">
-      <div><span id="days">0</span><small>Days</small></div>
-      <div><span id="hours">0</span><small>Hours</small></div>
-      <div><span id="minutes">0</span><small>Minutes</small></div>
-      <div><span id="seconds">0</span><small>Seconds</small></div>
-    </div>
-    <p class="message"> hey sruju... 🤍
+
+  <div id="entryScreen">
+    <h2>🎀 Enter your name to unlock your surprise 🎀</h2>
+    <input type="text" id="nameInput" placeholder="Enter your name..." />
+    <br>
+    <button onclick="checkName()">Submit</button>
+    <p id="wrongName"></p>
+  </div>
+
+  <div id="mainContent" style="display: none;">
+    <div class="container">
+      <h1>🎉 Countdown to Srujana's Birthday 🎉</h1>
+      <p class="sub">Just waiting for the most beautiful day ❤️</p>
+
+      <div id="countdown">
+        <div><span id="days">0</span><small>Days</small></div>
+        <div><span id="hours">0</span><small>Hours</small></div>
+        <div><span id="minutes">0</span><small>Minutes</small></div>
+        <div><span id="seconds">0</span><small>Seconds</small></div>
+      </div>
+
+      <p class="message">hii srujana... 🤍
      happy birthday papa.. ela unnav? bagunavu anukntuna and
       edhi na first website koncham silly and simple ga untadhi em anukoku
       neku edhoti special ga gift chedam anukona anduku ela nak 
       telisina code tho rastuna...  emina bagopoyhe sorry... 
       na wish A neku eroju oche first and best wish kavalini koukuntuna
-      edhi okka china selfishness... neku nenu gurthu unnana??
+      edhi okka china selfishness... neku nenu gurthu unnana??</p>
+    </div>
     </p>
   </div>
    <audio autoplay loop style="display: none">
@@ -31,6 +44,19 @@
   Your browser does not support the audio element.
 </audio>
 
-  <script src="script.js"></script>
+<script>
+  function checkName() {
+    const name = document.getElementById("nameInput").value.toLowerCase();
+    const validName = ["srujana , Srujana"];
+    if (name === validName) {
+      document.getElementById("entryScreen").style.display = "none";
+      document.getElementById("mainContent").style.display = "block";
+    } else {
+      document.getElementById("wrongName").innerText = "Sorry! This gift is not for you 🩷";
+    }
+  }
+</script>
+
+<script src="script.js"></script>
 </body>
 </html>
