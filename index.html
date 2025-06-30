@@ -19,6 +19,7 @@
   </div>
 
   <div id="mainContent" style="display: none;">
+      <!-- All your birthday countdown and messages go here -->
     <div class="container">
       <h1>🎉 Countdown to Srujana's Birthday 🎉</h1>
       <p class="sub">Just waiting for the most beautiful day ❤️</p>
@@ -38,7 +39,7 @@
       na wish A neku eroju oche first and best wish kavalini koukuntuna
       edhi okka china selfishness... neku nenu gurthu unnana??</p>
     </div>
-    </p>
+
   </div>
    <audio autoplay loop style="display: none">
   <source src="Needhe-Needhe.mp3" type="audio/mpeg">
@@ -48,8 +49,7 @@
 <script>
   function checkName() {
     const name = document.getElementById("nameInput").value.toLowerCase();
-    const validName = ["srujana"];
-    if (validNames.includes(name)) {
+    if (name === "srujana") {
       document.getElementById("entryScreen").style.display = "none";
       document.getElementById("mainContent").style.display = "block";
     } else {
