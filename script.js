@@ -33,7 +33,12 @@ const countdown = setInterval(() => {
     document.querySelector(".container").innerHTML = `
       <h1>Happy Birthday, Srujana! 🎉</h1>
       <p class="sub">Wishing you happy 18th birthday .</p>
-      <p class="message">happy birthday papa 💖</p>
+      <p class="message">happy birthday papa 💖...
+        ela unnav?? bagunav anukuntuna... neetho asala eppudu matlada le kani chala deep ga attach ipoya
+        maybe neelo unna charm emo adhi.. here are some heartfull wishes to a person 
+        who is incredibly smart and incredibly silly. to a pearson who is beautiful,charming,and elegant
+        to a girl who is intellegent,and stupid(a bit).. to a girl who can be spotted in crowd of million and more 
+        ela chepukuntu povali ante okka janma chaladhu emo...anyway wishing you a happy birthday...</p>
     `;
   }
 }, 1000);
